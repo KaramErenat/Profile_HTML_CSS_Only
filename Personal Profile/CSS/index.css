@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.container-image{
+    background-image: url(../imgs/bg-image-repeat.jpg);
+    background-repeat: repeat;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .container-left .profile{;
+} */
+
+.container-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+  
+  }
+
+.container-left img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.container-left h2 {
+    display: block;
+  color: white;
+  font-size: 25px;
+  font-family: 'Roboto', sans-serif;
+  text-align: top;
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.container-left h2::after{
+    content: '|';
+   color: White;
+    animation-name: typerEffect;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.container-left .profile .icons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+@keyframes typerEffect {
+ 0%{
+    content: 'K|';
+ }
+    10%{
+        content: 'Ka|';
+    }
+    20%{
+        content: 'Kar|';
+    }
+    30%{
+        content: 'Kara|';
+    }
+    40%{
+        content: 'Karam|';
+    }
+    50%{
+        content: 'Karam E|';
+    }
+    60%{
+        content: 'Karam Er|';
+    }
+    70%{
+        content: 'Karam Ere|';
+    }
+    80%{
+        content: 'Karam Eren|';
+    }
+    90%{
+        content: 'Karam Erena|';
+    }
+    100%{
+        content: 'Karam Erenat|';
+    }
+    
+}
+
+
+.container-right{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding-right: 40px;
+}
+
+.container-right .about{
+    color: white;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
